@@ -1,0 +1,63 @@
+{
+    "name": "tyhpdef/filament-infolists-impl",
+    "description": "Implementation package for tyhpdef/filament-infolists. Require tyhpdef/filament-infolists, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "5.8.2.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": ">=8.2",
+            "require": {
+                "tyhpdef/php": "@dev",
+                "tyhpdef/filament-support": "@dev",
+                "tyhpdef/filament-schemas": "@dev",
+                "tyhpdef/filament-tables": "@dev",
+                "tyhpdef/league-csv": "@dev",
+                "tyhpdef/danharrin-livewire-rate-limiting": "@dev",
+                "tyhpdef/filament-notifications": "@dev",
+                "tyhpdef/openspout-openspout": "@dev",
+                "tyhpdef/nette-php-generator": "@dev",
+                "tyhpdef/filament-actions": "@dev",
+                "tyhpdef/filament-forms": "@dev",
+                "tyhpdef/staudenmeir-belongs-to-through": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/filament-infolists"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "filament/infolists": "5.8.2"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev",
+        "tyhpdef/filament-support": "@dev",
+        "tyhpdef/filament-schemas": "@dev",
+        "tyhpdef/filament-tables": "@dev",
+        "tyhpdef/league-csv": "@dev",
+        "tyhpdef/danharrin-livewire-rate-limiting": "@dev",
+        "tyhpdef/filament-notifications": "@dev",
+        "tyhpdef/openspout-openspout": "@dev",
+        "tyhpdef/nette-php-generator": "@dev",
+        "tyhpdef/filament-actions": "@dev",
+        "tyhpdef/filament-forms": "@dev",
+        "tyhpdef/staudenmeir-belongs-to-through": "@dev"
+    }
+}
